@@ -19,7 +19,7 @@ Eftermiddag - (15:35)
 Morgen - (10:49)  
 Start udvikling af relevante komponenter
 
-Eftermiddag - (tidspunkt)
+Eftermiddag - (15:56)
  - skiftet til app routing
 
 ## Dag 3
