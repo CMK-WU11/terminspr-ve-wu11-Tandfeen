@@ -16,7 +16,9 @@ Eftermiddag - (15:35)
 
 ## Dag 2
 
-Morgen - (tidspunkt)  
+Morgen - (10:49)  
+Start udvikling af relevante komponenter
+
 Eftermiddag - (tidspunkt)
 
 ## Dag 3
