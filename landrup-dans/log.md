@@ -24,7 +24,9 @@ Eftermiddag - (15:56)
 
 ## Dag 3
 
-Morgen - (tidspunkt)  
+Morgen - (12:35)  
+skabt typerne og begyndt udvikling af api.ts
+
 Eftermiddag - (tidspunkt)
 
 ## Dag 4
