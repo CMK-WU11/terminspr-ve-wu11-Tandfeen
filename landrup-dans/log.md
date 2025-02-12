@@ -27,7 +27,8 @@ Eftermiddag - (15:56)
 Morgen - (12:35)  
 skabt typerne og begyndt udvikling af api.ts
 
-Eftermiddag - (tidspunkt)
+Eftermiddag - (15:54)
+færdiggjort typerne og næsten færdiggjort api.ts
 
 ## Dag 4
 

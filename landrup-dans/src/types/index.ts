@@ -14,6 +14,10 @@ export interface User {
     token?: string;
 }
 
+export interface CreateUserInput extends Omit<User, 'id' | 'token'> {
+    password: string;
+}
+
 export interface Activity {
     id: number;
     name: string;
