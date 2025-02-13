@@ -35,7 +35,9 @@ færdiggjort typerne og næsten færdiggjort api.ts
 Morgen - (12:30)
   færdiggjort næsten komponenter og centraliseret styling i global.css
 
-Eftermiddag - ()
+Eftermiddag - (15:58)
+    begyndt at lave Authcontext og ligge sidste touch på komponenter
+
 
 
 ## Dag 5
