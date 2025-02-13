@@ -32,8 +32,11 @@ færdiggjort typerne og næsten færdiggjort api.ts
 
 ## Dag 4
 
-Morgen - (tidspunkt)  
-Eftermiddag - (tidspunkt)
+Morgen - (12:30)
+  færdiggjort næsten komponenter og centraliseret styling i global.css
+
+Eftermiddag - ()
+
 
 ## Dag 5
 

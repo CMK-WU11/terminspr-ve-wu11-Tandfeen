@@ -3,19 +3,26 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --color-background: #EAEAEA;
+  --color-primary: #5E2E53;
+  --color-secondary: #E1A1E9;
+  --color-text: #000000;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-body: 'Ubuntu, sans-serif';
+  --font-logo: 'Roboto, Racing Sans One, sans-serif';
+  
+  --font-size-base: 18px;
+  --font-size-lg: 24px;
+  --font-size-xl: 36px;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  background-color: var(--color-background);
+
+  font-family: var(--font-body);
+  color: var(--color-text);
 }

@@ -69,12 +69,48 @@ export async function fetchUserById(id: number, token: string): Promise<User> {
     return res.json()
 }
 
-// Hent roster til hold
+// Hent roster til hold - GET /api/v1/users/:userId/:activityId
 export async function fetchRoster(userId: number, activityId: number, token: string): Promise<Enrollment[]> {
     const res = await fetch(`${BASE_URL}/api/v1/users/${userId}/roster/${activityId}`, {
         headers: { Authorization: `Bearer ${token}` }
     })
 
     if (!res.ok) throw new Error('Fejl ved afhentning af roster')
+    return res.json()
+}
+
+// tilføj bruger til aktivitet - POST /api/v1/users/:userId/activities/:activityId
+export async function addUserToActivity(userId: number, activityId: number, token: string): Promise<void> {
+    const res = await fetch(`${BASE_URL}/api/v1/users/${userId}/activities/${activityId}`, {
+        method: 'POST',
+        headers: { Authorization: `Bearer ${token}` }
+    })
+
+    if (!res.ok) throw new Error('Fejl ved tilføjelse af bruger til aktivitet')
+}
+
+//Fjern bruger fra aktivitet - DELETE /api/v1/users/:userId/activities/:activityId
+export async function removeUserToActivity(userId: number, activityId: number, token: string): Promise<void> {
+    const res = await fetch(`${BASE_URL}/api/v1/users/${userId}/activities/${activityId}`, {
+        method: 'DELETE',
+        headers: { Authorization: `Bearer ${token}` }
+    })
+
+    if (!res.ok) throw new Error('Fejl ved fjernelse af bruger til aktivitet')
+}
+
+// ------------------------------------------------------------
+//                             Authentication
+// ------------------------------------------------------------
+
+//skab auth token - POST /auth/token
+export async function createToken(username: string, password: string): Promise<TokenResponse> {
+    const res = await fetch(`${BASE_URL}/auth/token`, {
+        method: 'POST',
+        headers: { 'Content-type': 'application/json' },
+        body: JSON.stringify({username, password})
+    })
+
+    if (!res.ok) throw new Error('Fejl ved skabelse af token')
     return res.json()
 }
