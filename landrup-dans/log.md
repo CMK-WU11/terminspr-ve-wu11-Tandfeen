@@ -42,5 +42,9 @@ Eftermiddag - (15:58)
 
 ## Dag 5
 
-Morgen - (tidspunkt)  
-Eftermiddag - (tidspunkt)
+Morgen - (10:00)
+prøvede at færdiggøre styling men havde mange problemer med at få den til overhovedet at virke..
+
+Eftermiddag - (15:57)
+
+færdiggjorde så meget jeg nu kunne under tidspresset

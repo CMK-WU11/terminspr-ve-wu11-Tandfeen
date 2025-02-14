@@ -1,7 +1,8 @@
 export interface Asset {
     id: number;
-    name: string;
     url: string;
+    createdAt: string;
+    updatedAt: string;
 }
 
 export interface User {
@@ -19,12 +20,15 @@ export interface CreateUserInput extends Omit<User, 'id' | 'token'> {
 }
 
 export interface Activity {
+    asset: any;
     id: number;
     name: string;
     weekday: string;
     time: string;
     description: string;
-    ageLimit: string;
+    minAge: number;
+    maxAge: number;
+    imageUrl?: string;
 }
 
 export interface Enrollment {

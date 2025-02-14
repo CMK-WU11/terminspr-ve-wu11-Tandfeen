@@ -90,7 +90,7 @@ export async function addUserToActivity(userId: number, activityId: number, toke
 }
 
 //Fjern bruger fra aktivitet - DELETE /api/v1/users/:userId/activities/:activityId
-export async function removeUserToActivity(userId: number, activityId: number, token: string): Promise<void> {
+export async function removeUserFromActivity(userId: number, activityId: number, token: string): Promise<void> {
     const res = await fetch(`${BASE_URL}/api/v1/users/${userId}/activities/${activityId}`, {
         method: 'DELETE',
         headers: { Authorization: `Bearer ${token}` }

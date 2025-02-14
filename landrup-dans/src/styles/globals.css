@@ -26,3 +26,7 @@ body {
   font-family: var(--font-body);
   color: var(--color-text);
 }
+
+#splash {
+  background-image: "/public/splash-image.jpg";
+}
